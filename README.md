@@ -67,6 +67,6 @@ To prevent this, DormChef uses a two-stage filter built into the Python applicat
 
 ### Quickstart
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/](https://github.com/)<YOUR-GITHUB-USERNAME>/dormchef.git
-   cd dormchef
+ ```bash
+git clone https://github.com/Razorbillworks/dormchef.git
+cd dormchef
