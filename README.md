@@ -21,9 +21,9 @@ My friend Abhishek is an engineering student who hits the gym regularly and trac
 His cooking options are strictly limited to what's allowed in our room:
 - **Electric kettle** (Default)
 - **Sandwich toaster / press** (Default)
-- *Optional toggle for induction plate or no-cook assembly*
+- **Optional toggle for induction plate or no-cook assembly**
 
-Standard online recipe apps assume an oven, a 4-burner stovetop, and full grocery access. Worse, generic cloud AI chatbots regularly suggest dangerous shortcuts—like telling someone to crack raw eggs or fry butter directly onto bare electric kettle heating coils, which burns out the element, sparks a short circuit, and incurs hostel inspection fines.
+Standard online recipe apps assume an oven, a 4-burner stovetop, and full grocery access. Worse, generic cloud AI chatbots regularly suggest dangerous shortcuts, like telling someone to crack raw eggs or fry butter directly onto bare electric kettle heating coils, which burns out the element, sparks a short circuit, and incurs hostel inspection fines.
 
 DormChef starts from Abhishek's actual setup. It knows what tools exist, prioritizes protein macros, and enforces strict appliance safety rules.
 
@@ -40,7 +40,7 @@ DormChef starts from Abhishek's actual setup. It knows what tools exist, priorit
 
 ## 🛡️ The Two-Stage Allergen & Safety Filter
 
-Small language models (like 2B parameter weights) often struggle to strictly follow negative constraints—asking the model "don't use dairy" will often still result in a recipe with butter.
+Small language models (like 2B parameter weights) often struggle to strictly follow negative constraints; asking the model "don't use dairy" will often still result in a recipe with butter.
 
 To prevent this, DormChef uses a two-stage filter built into the Python application layer:
 1. **Pre-filter (Input sanitization):** Before the prompt reaches the model, Python scans the pantry items against common allergen groups (dairy, eggs, peanuts, tree nuts, gluten, soy, fish, shellfish). Any matching ingredient is stripped out automatically, and the UI notifies the user.
@@ -52,7 +52,7 @@ To prevent this, DormChef uses a two-stage filter built into the Python applicat
 
 ## 🛠️ Tech Stack & Prize Categories
 
-- **Core Model:** [Google Gemma 2 (2B)](https://ai.google.dev/gemma) running locally — *Entering Best Use of Gemma*
+- **Core Model:** [Google Gemma 2 (2B)](https://ai.google.dev/gemma) running locally - *Entering Best Use of Gemma*
 - **Local Inference:** [Ollama](https://ollama.com)
 - **Frontend:** [Streamlit](https://streamlit.io)
 
