@@ -55,7 +55,6 @@ To prevent this, DormChef uses a two-stage filter built into the Python applicat
 - **Core Model:** [Google Gemma 2 (2B)](https://ai.google.dev/gemma) running locally — *Entering Best Use of Gemma*
 - **Local Inference:** [Ollama](https://ollama.com)
 - **Frontend:** [Streamlit](https://streamlit.io)
-- **Assistance:** GitHub Copilot — *Entering Best Use of GitHub Copilot*
 
 ---
 
